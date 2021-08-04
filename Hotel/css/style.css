@@ -1,0 +1,389 @@
+@import"grid.css";
+
+:root{
+    --white: rgb(255,255,255);
+    --gray: rgb(180,180,180);
+    --darkgray: rgb(70,70,70);
+    --pink: #e684c3;
+    --yellow: #f7dc69;
+    --blue: #7ce6d7;
+}
+
+.text-white{ color: var(--white); }
+.text-gray{ color: var(--gray); }
+.text-pink{ color: var(--pink); }
+.text-blue{ color: var(--blue); }
+.text-yellow{ color: var(--yellow); }
+
+
+.bgr-white{ background-color: var(--white); }
+.bgr-gray{ background-color: var(--gray); }
+.bgr-blue{ background-color: var(--blue); }
+.bgr-pink{ background-color: var(--pink); }
+.bgr-yellow{ background-color: var(--yellow); }
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.2em;
+    color: var(--darkgray);
+    background-color: rgb(255, 255, 240);
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    margin-right: 5px;
+}
+
+.font{
+    font-family: 'Tangerine', cursive;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+.vm{
+    font-size: 1.5em;
+}
+
+.vm:hover{
+    color: var(--blue);
+}
+
+#search{
+    margin-right: 10px;
+}
+
+#buttonSearch{
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+a{ 
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0.67em 0;  
+    font-family: 'Marck Script', cursive;
+    cursor: pointer;
+}
+
+h1{
+    font-size: 2.2em;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 1.9em;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 1.6em;
+}
+
+p{
+    line-height: 1.5;
+    margin: 0.67rem 0; 
+}
+
+
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.bgr-img{
+    height: 50%;
+    background-image: url(../images/light-bulb-1.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.middle{
+    width: inherit;
+    height: 100% ;
+    padding: 0;
+    margin: 0;
+    font-size: 1.4em;
+}
+
+.middle img{
+    padding: 0;
+    float: left;
+    height: 100%;
+    width: auto;
+    margin-right: 2%;
+}
+
+#Hotel, #Hotel1, #Offert1, #Offert2{
+    height: 100%; 
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5%;
+    padding: 15% 5% 0 5%;
+}
+#Hotel{
+    margin-left: 20%;
+    background-image: url(../imagess/alila_villas_uluwatu.jpg);
+    box-shadow: 0 10px 12px rgba(0,0,0,0.4);
+}
+
+#Hotel1{   
+    background-image: url(../imagess/Alila-Bangsar---Accommodation---Studio-Bathroom.jpg);
+    margin-right: 20%;
+    box-shadow: 0 10px 12px rgba(0,0,0,0.4);
+}
+
+#Offert1{
+    margin-top: 1%;
+    margin-left: 20%;
+    margin-right: 10%;
+    background-image: url(../imagess/wedding.jpg);
+    box-shadow: 0 10px 12px rgba(0,0,0,0.4);
+}
+
+#Offert2{
+    margin: 5% 20% 1% 10%;
+    background-image: url(../imagess/70d25c81678e011038cc090d6640e93a.jpg);
+    box-shadow: 0 10px 12px rgba(0,0,0,0.4);
+}
+
+.gallery{
+    height: auto;
+}
+
+.gallery a i{
+    margin: 10px;
+}
+
+.bgrHotel, .bgrHotel1, .bgrOffert1, .bgrOffert2{
+    background-color: rgba(140,140,140,0.9);
+    height: auto;
+    box-shadow: 0 10px 12px rgba(0,0,0,0.4);
+    z-index: 12;
+    font-weight: 700;
+}
+
+.bgrHotel, .bgrHotel1{
+    width: 500px;
+    margin-top: 10%;
+}
+
+.bgrOffert1, .bgrOffert2{
+    width: 700px;
+    margin-top: -15%;
+}
+
+.bgrOffert1{
+    margin-left: -40%;
+}
+
+.bgrOffert2{
+    float: right;
+    margin-right: -40%;
+}
+
+.bgrHotel{
+    margin-left: -30%;
+}
+
+.bgrHotel1{
+    float: right;
+    margin-right: -30% ;
+}
+
+.bgrHotel h2, .bgrOffert1 h2, .bgrOffert2 h2{
+    font-weight: 800;    
+}
+
+.bgrHotel h2:hover, .bgrOffert1 h2:hover, .bgrOffert2 h2:hover{
+    color: var(--blue);
+}
+
+.bgrOffert1 ul{
+    list-style-type:circle;
+}
+
+@media(max-width:950px){
+    
+    .middle img{
+        display: none; 
+    }
+    
+    .middle{
+        background-image: url(../imagess/Alila-Bangsar---Facilities---Pool-Deck1.jpg);
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 30%;
+    }
+    
+    .bgrCenter{
+        color: white;
+        background-color: rgba(90,90,90,0.7);
+        padding: 0 4% 8% 4%;
+    }
+    
+    #Hotel, .bgrHotel, #Hotel1, .bgrHotel1, #Offert1, #Offert2, .bgrOffert1, .bgrOffert2{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .bgrOffert2{
+        margin-top: 15%;
+    }
+    
+    .bgrHotel, .bgrHotel1, .bgrOffert1, .bgrOffert2{
+        width: 370px;
+    }
+    
+}
+
+@media(max-width:480px){
+    .bgrHotel, .bgrHotel1, .bgrOffert1, .bgrOffert2{
+        width: 100%;
+    }
+}
+
+@media(min-width:950px) and (max-width:1115px){
+    .middle img{
+        width: 70%;
+    }
+}
+
+
+.menu{
+    float: left;
+    height: 60px; 
+    margin: 0;
+    padding: 0;
+}
+.menu ul{
+    list-style-type: none;  
+    margin: 0 auto;
+    padding: 0;  
+    overflow: hidden;
+}
+.menu ul li{
+    float:left;
+}
+.menu ul li a{
+    font-family: 'Bad Script', cursive;
+    display: block;
+    line-height: 60px;
+    padding: 0 30px;  
+    color: var(--gray);
+    font-size: 1.2em;
+    font-weight: 700;
+    font-variant-caps: small-caps;
+    text-decoration: none;
+    -webkit-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+
+.menu ul li a i{
+    margin-right: 10px;
+}
+.menu ul li a:hover{
+    background-color:  var(--white);
+    color: var(--blue);
+}
+.menu ul li a.activeItem, .menu ul li a.activeItem:hover{
+    color: var(--pink);
+}
+.toggle-nav{
+    display: none;
+    color: var(--yellow);
+}
+@media(max-width:991px){
+    .menu{ 
+        height: 50px;
+    }
+    
+    .menu ul.active {
+        display:none;
+    }
+    
+    .menu ul {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: var(--white);
+        z-index: 20;
+    }
+    
+    .menu ul li {
+        padding-top: 10px;
+        float: none;
+        display: block;
+    }
+    
+    .menu ul li a {
+        height: 80px;
+        padding-top: 10px;
+        font-size: 1.3em;
+        text-align: center;
+    }
+    
+    
+    .toggle-nav {
+        display: inline;   
+    }
+}
+
+
+.lay{
+    border-radius: 0.5em;
+    background-color: gray;
+    position: relative;
+}
+.lay img{
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    backface-visibility: hidden;  
+}
+.lay:hover img{
+    opacity: 0.3;
+}
+.lay button{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.lay:hover button{
+    opacity: 1;
+}
+
+
+
