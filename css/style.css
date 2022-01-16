@@ -198,6 +198,7 @@ img{
 
 .bgrOffert1{
     margin-left: -40%;
+    z-index: 50;
 }
 
 .bgrOffert2{
@@ -222,7 +223,7 @@ img{
     color: var(--blue);
 }
 
-.bgrOffert1 ul{
+.bgrOffert1 ul, .bgrOffert2 ul{
     list-style-type:circle;
 }
 
